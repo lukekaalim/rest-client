@@ -1,0 +1,23 @@
+{
+  "name": "@lukekaalim/rest-client",
+  "version": "1.0.0",
+  "description": "HTTP REST Client Implementation",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukekaalim/rest-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukekaalim/rest-client/issues"
+  },
+  "homepage": "https://github.com/lukekaalim/rest-client#readme",
+  "dependencies": {
+    "@lukekaalim/cast": "^1.0.0",
+    "@lukekaalim/http-client": "^2.3.1"
+  }
+}

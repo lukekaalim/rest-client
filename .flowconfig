@@ -1,0 +1,11 @@
+[ignore]
+
+[include]
+example/node_modules/@lukekaalim
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
