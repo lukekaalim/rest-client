@@ -1,6 +1,6 @@
 {
   "name": "@lukekaalim/rest-client",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "HTTP REST Client Implementation",
   "main": "src/main.js",
   "scripts": {
