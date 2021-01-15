@@ -1,0 +1,29 @@
+# Javascript Node CircleCI 2.0 configuration file
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cimg/node:15.6.0
+    steps:
+      - checkout
+      - run: npm ci install
+      - run: npm publish --access public -_authToken=$NPM_PUBLISH_TOKEN
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - test:
+          filters:  # required since `deploy` has tag filters AND requires `test`
+            tags:
+              only: /.*/
+      - deploy:
+          context:
+            - NPM
+          requires:
+            - test
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v.*/
