@@ -13,6 +13,7 @@ jobs:
           command: |
             npm publish --access public -_authToken=$NPM_PUBLISH_TOKEN
 workflows:
+  version: 2
   commit:
     jobs:
       - deploy:
