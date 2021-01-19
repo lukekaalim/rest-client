@@ -213,6 +213,19 @@ const toDeleteResponse = (response/*: HTTPResponse*/)/*: DELETEResponse*/ => {
 
 
 module.exports = {
+  ...require('./base64'),
+  ...require('./cache'),
+  ...require('./http'),
+  ...require('./object'),
+  ...require('./status'),
   ...require('./authorization'),
   createRESTClient,
 };
+/*::
+export type * from './base64';
+export type * from './cache';
+export type * from './http';
+export type * from './object';
+export type * from './status';
+export type * from './authorization';
+*/
